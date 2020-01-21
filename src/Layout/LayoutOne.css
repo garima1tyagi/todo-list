@@ -2,3 +2,10 @@
     background-color: #ffe564;
     height: 2rem;
 }
+.fluid-container {
+    flex-basis: min-content;
+}
+.box-fluid {
+    background-color:#007FFF;
+    height: 2rem;
+}

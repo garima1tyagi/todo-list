@@ -1,0 +1,46 @@
+
+body {
+    background: #20262E;
+    padding: 20px;
+    font-family: Helvetica;
+
+  }
+  
+  #app {
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all 0.2s;
+
+  }
+  
+  li {
+    margin: 8px 0;
+  }
+  
+  h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .done {
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: line-through;
+  }
+  
+  input {
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 50%;
+    border-color: rgba(0, 0, 0, 0.34);
+    border-radius: 1px;
+    padding-left: 10px;
+  }
+  .items-container {
+    height: auto;
+    width: 50%;
+    border-color: rgba(0, 0, 0, 0.34);
+    border-radius: 1px;
+    display: block;
+    background-color: #f5f5f5;
+  }

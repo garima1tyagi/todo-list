@@ -59,6 +59,15 @@ import './LayoutOne.css'
  <div className="p-2 box mr-3 order-2">Order-5</div>
  <div className="p-2 box mr-3 order-1">Order-6</div>
      </div>
+     <h4>Fluid Width</h4>
+<div className="fluid-container">
+ <div className="p-2 box-fluid mb-2 ">1</div>
+ <div className="p-2 box-fluid mb-2">2</div>
+ <div className="p-2 box-fluid mb-2">3</div>
+ <div className="p-2 box-fluid mb-2">4</div>
+ <div className="p-2 box-fluid mb-2">5</div>
+ <div className="p-2 box-fluid">6</div>
+     </div>
          </div>   
         </div>
     )
