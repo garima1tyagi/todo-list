@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 
 
-const List = (props) => {
+class List extends Component   {
+    
+    render() {
     return (
-        <ol>
-            {
-                props.items.map((item, index) => 
-                    <li key={index}>{item}</li>
+        <ul>
+            <li><span>{this.props.children}</span>
+                <button  onClick={this.props.delEvent} className="trash-icon"><i className="fa fa-trash"></i></button>
 
-                )
-            }
-            </ol>
+                </li>
+                 </ul>
     )
+}
 }
 
 export default List

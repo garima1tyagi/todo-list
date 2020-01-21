@@ -7,7 +7,7 @@ class TodoApp extends React.Component {
         super(props)
       this.state = {
       shoppingItem : '',
-      items: []
+      items: [],
       
       }
 this.changeHandler = this.changeHandler.bind(this)
@@ -23,11 +23,17 @@ this.changeHandler = this.changeHandler.bind(this)
         event.preventDefault()
         this.setState({
             shoppingItem: '',
-            items: [...this.state.items, this.state.shoppingItem]
+            items: [...this.state.items, this.state.shoppingItem],
         })
      
     }
     
+    handleDelete = (index, event) => {
+        const items =  this.state.items
+        items.splice(index, 1)
+        this.setState({items: items})
+
+  };
     render() {
       return (
         <div>
@@ -37,7 +43,19 @@ this.changeHandler = this.changeHandler.bind(this)
         <button>Add</button>
         </form>
         <div className="items-container">
-       <List items={this.state.items} />
+       {
+           this.state.items.map((item, index)=> {
+            return (
+                   <List delEvent={this.handleDelete.bind(this,index)}>
+                   {item}
+                   </List>
+           )
+            
+        }
+    )
+
+       }
+       
         </div>
         </div>
       )
